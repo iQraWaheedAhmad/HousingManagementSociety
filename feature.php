@@ -45,7 +45,6 @@
       background-color: rgba(37, 99, 235, 0.1); /* Primary/10 */
       font-size: 28px;
     }
-    /* Added to ensure the text stays centered */
     .section-title {
       margin-bottom: 1rem;
     }
@@ -53,47 +52,50 @@
       max-width: 600px;
       margin: auto;
     }
+    .grid-wrapper {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   </style>
 </head>
 <body>
 
 <section class="py-16 bg-white">
-
   <div class="text-center mb-12">
-  <div style="max-width: 700px; margin: 0 auto;">
-    <h2 class="text-3xl font-bold mb-4 section-title">Key Features</h2>
-    <p class="text-lg text-gray-600 section-description">
-      Our comprehensive property management portal offers everything you need to efficiently manage housing societies.
-    </p>
+    <div style="max-width: 700px; margin: 0 auto;">
+      <h2 class="text-3xl font-bold mb-4 section-title">Key Features</h2>
+      <p class="text-lg text-gray-600 section-description">
+        Our comprehensive property management portal offers everything you need to efficiently manage housing societies.
+      </p>
+    </div>
   </div>
-</div>
 
+  <?php
+    $featuresData = [
+      [
+        "icon" => "🏠",
+        "title" => "Society Management",
+        "description" => "Manage multiple housing societies with ease and efficiency"
+      ],
+      [
+        "icon" => "📄",
+        "title" => "Billing System",
+        "description" => "Automated billing and payment tracking for residents"
+      ],
+      [
+        "icon" => "⚖️",
+        "title" => "Auction System",
+        "description" => "Buy/sell properties through transparent auction processes"
+      ],
+      [
+        "icon" => "🎧",
+        "title" => "Complaint System",
+        "description" => "Track and resolve resident complaints efficiently"
+      ]
+    ];
+  ?>
 
-    <?php
-      $featuresData = [
-        [
-          "icon" => "🏠",
-          "title" => "Society Management",
-          "description" => "Manage multiple housing societies with ease and efficiency"
-        ],
-        [
-          "icon" => "📄",
-          "title" => "Billing System",
-          "description" => "Automated billing and payment tracking for residents"
-        ],
-        [
-          "icon" => "⚖️",
-          "title" => "Auction System",
-          "description" => "Buy/sell properties through transparent auction processes"
-        ],
-        [
-          "icon" => "🎧",
-          "title" => "Complaint System",
-          "description" => "Track and resolve resident complaints efficiently"
-        ]
-      ];
-    ?>
-
+  <div class="grid-wrapper">
     <div class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-4">
       <?php foreach ($featuresData as $feature): ?>
         <div class="card">

@@ -232,37 +232,7 @@
 <body>
 
 <!-- Navbar -->
-<nav>
-  <div class="container">
-    <a href="/" class="logo">
-      <i class="fas fa-home"></i> HousingManagementSociety
-    </a>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="rent-properties.php">Rent List</a>
-      <a href="selllist.php">Sell List</a>
-      <a href="/">Logout</a>
-      <a href="admin-login.php">Admin</a>
-      <a href="contact.php">Contact Us</a>
-    </div>
-    <div class="menu-btn" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="/">Home</a>
-      <a href="rent-properties.php">Rent List</a>
-      <a href="selllist.php">Sell List</a>
-      <a href="/">Logout</a>
-      <a href="admin-login.php">Admin</a>
-      <a href="contact.php">Contact Us</a>
-    </div>
-  </div>
-</nav>
-
+<?php include 'navbar.php'; ?>
 <!-- Hero Section -->
 <?php include 'hero.php'; ?>
 

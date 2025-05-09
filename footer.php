@@ -12,41 +12,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    .bg-primary {
-      background-color: #0d6efd !important;
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    .bg-secondary {
-      background-color: #6c757d !important;
-    }
-    .footer-cta {
-      background-color: #0056d2;
+    main {
+      flex: 1;
     }
   </style>
 </head>
 <body>
 
   
-
- 
   <!-- Footer -->
   <footer class="bg-primary text-white pt-5">
-
-    <!-- CTA Section -->
-    <!-- <div class="footer-cta text-center py-4">
-      <div class="container">
-        <h4 class="fw-bold mb-2">Ready to Manage Your Properties Efficiently?</h4>
-        <p>Join thousands of satisfied property managers who use our platform to streamline their operations.</p>
-        <div class="mt-3">
-          <a href="#" class="btn btn-light me-2">Get Started</a>
-          <a href="#" class="btn btn-outline-light">Learn More</a>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Main Footer Content -->
-    <div class="container py-5">
+    <div class="container py-4 mt-3">
       <div class="row gy-4">
-        
+
         <!-- About -->
         <div class="col-md-4">
           <h5 class="fw-bold mb-3">PropertyPortal</h5>
@@ -84,18 +69,16 @@
           <p>Subscribe to our newsletter for the latest updates on properties and services.</p>
           <form class="d-flex">
             <input type="email" class="form-control me-2" placeholder="Enter your email" required>
-            <button class="btn btn-secondary" type="submit">Subscribe</button>
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
           </form>
         </div>
 
       </div>
+    </div>
 
-      <!-- Copyright -->
-      <div class="d-flex justify-content-center border-top border-white mt-5 pt-3">
-  <p class="mb-0 text-center">&copy; 2025 Housing Society Management System. All rights reserved.</p>
-</div>
-
-
+    <!-- Copyright -->
+    <div class="mt-2 pt-2 text-center border-top border-white">
+      <p class="mb-2">&copy; <?php echo date("Y"); ?> Housing Society Management System. All rights reserved.</p>
     </div>
   </footer>
 
